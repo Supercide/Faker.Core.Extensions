@@ -3,6 +3,10 @@
     <PropertyGroup>
         <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
         <Version>$(SemVer)</Version>
+        <PackageProjectUrl>https://github.com/Supercide/Faker.Core.Extensions</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Supercide/Faker.Core.Extensions</RepositoryUrl>
+        <Authors>Jordan Anderson</Authors>
+        <Description>Extension package for faker core</Description>
     </PropertyGroup>
 
 </Project>
