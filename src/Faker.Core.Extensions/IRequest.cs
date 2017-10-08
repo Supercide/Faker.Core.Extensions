@@ -1,4 +1,4 @@
-﻿namespace Fake.Core.Extensions
+﻿namespace Faker.Core.Extensions
 {
     public interface IRequest
     {
