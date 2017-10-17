@@ -1,11 +1,6 @@
-version: 0.1.1
-
 os: Visual Studio 2017
-
+version: 0.2.0
 test: off
-
-artifacts:
-- path: '.\artifacts\packages\*.nupkg'
 
 build_script:
   - ps: Update-AppveyorBuild -Version "$($env:version)"
