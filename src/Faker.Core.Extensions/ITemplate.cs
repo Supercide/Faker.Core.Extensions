@@ -1,10 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace Faker.Core.Extensions {
+﻿namespace Faker.Core.Extensions {
     public interface ITemplate
     {
-        string Request { get; set; }
+        IRequest Request { get; set; }
         string Response { get; set; }
-        IList<string> GetProperties();
     }
 }
