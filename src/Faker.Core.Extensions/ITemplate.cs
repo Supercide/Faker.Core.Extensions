@@ -2,6 +2,6 @@
     public interface ITemplate
     {
         IRequest Request { get; set; }
-        string Response { get; set; }
+        IResponse Response { get; set; }
     }
 }
