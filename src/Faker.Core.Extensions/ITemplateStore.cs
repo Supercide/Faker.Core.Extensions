@@ -5,6 +5,6 @@ namespace Faker.Core.Extensions {
     {
         ITemplate[] GetTemplates(Uri @namespace);
 
-        void StoreTemplate(ITemplate template);
+        void StoreTemplate(Uri @namespace, ITemplate template);
     }
 }
