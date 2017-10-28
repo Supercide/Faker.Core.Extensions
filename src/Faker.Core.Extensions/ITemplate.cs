@@ -3,9 +3,9 @@
 namespace Faker.Core.Extensions {
     public interface ITemplate
     {
-        IReadOnlyDictionary<string, string> Properties { get; }
+        Dictionary<string, string> Properties { get; }
 
-        IReadOnlyDictionary<string, string> Metadata { get; }
+        Dictionary<string, string> Metadata { get; }
 
         string Response { get; }
     }
