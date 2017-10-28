@@ -3,7 +3,7 @@
 namespace Faker.Core.Extensions {
     public interface ITemplateStore
     {
-        ITemplate[] GetTemplates(Uri @namespace);
+        ITemplateContainer GetTemplateContainer(Uri @namespace);
 
         void StoreTemplate(Uri @namespace, ITemplate template);
     }

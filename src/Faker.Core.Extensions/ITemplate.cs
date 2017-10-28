@@ -1,7 +1,12 @@
-﻿namespace Faker.Core.Extensions {
+﻿using System.Collections.Generic;
+
+namespace Faker.Core.Extensions {
     public interface ITemplate
     {
-        IRequest Request { get; set; }
-        IResponse Response { get; set; }
+        IReadOnlyDictionary<string, string> Properties { get; }
+
+        IReadOnlyDictionary<string, string> Metadata { get; }
+
+        string Response { get; }
     }
 }
