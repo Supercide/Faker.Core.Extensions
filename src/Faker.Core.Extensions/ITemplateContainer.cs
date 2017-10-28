@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 
 namespace Faker.Core.Extensions {
-    public interface ITemplateContainer
+    public interface ITemplateContainer<out T> where T : ITemplate
     {
         Uri Namespace { get; }
 
-        IEnumerable<ITemplate> Templates { get; }
+        IEnumerable<T> Templates { get; }
     }
 }

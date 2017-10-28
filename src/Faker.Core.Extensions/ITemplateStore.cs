@@ -1,10 +1,10 @@
 ﻿using System;
 
 namespace Faker.Core.Extensions {
-    public interface ITemplateStore
+    public interface ITemplateStore<T> where T : ITemplate
     {
-        ITemplateContainer GetTemplateContainer(Uri @namespace);
+        ITemplateContainer<T> GetTemplateContainer(Uri @namespace);
 
-        void StoreTemplate(Uri @namespace, ITemplate template);
+        void StoreTemplate(Uri @namespace, T template);
     }
 }
