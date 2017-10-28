@@ -1,5 +1,5 @@
 os: Visual Studio 2017
-version: 0.6.0
+version: 0.7.0
 test: off
 
 build_script:
